@@ -60,6 +60,7 @@ main {
 }
 
 .image1 {
-  width: 350px; 
+  width: 500px; 
   height: auto; /* 高度自适应 */
+  margin-bottom:10px;
 }
