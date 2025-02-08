@@ -50,10 +50,6 @@ body {
   margin-right: 10px;
 }
 
-html {
-  scroll-behavior: smooth;
-}/*chatgpt说这个css能“让跳转滚动动画更流畅”*/
-
 /* 右侧主要内容 */
 main {
   background-color: #fff;
