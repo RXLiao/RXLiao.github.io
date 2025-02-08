@@ -64,7 +64,7 @@ main {
   height: auto; /* 高度自适应 */
   margin-bottom:10px;
   /*下面是居中代码*/
-  margin: 0 auto 10px; /* 上下0 左右自动 */
+  margin: 0 auto; /* 上下0 左右自动 */
   display: block; /* 关键属性 */
 }
 
