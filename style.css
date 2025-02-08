@@ -60,7 +60,6 @@ main {
 }
 
 .image1 {
-  width: 100%;  /* 宽度自适应父容器 */
-  max-width: 200px; /* 最大宽度限制 */
+  width: 350px; 
   height: auto; /* 高度自适应 */
 }
