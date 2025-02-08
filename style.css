@@ -64,3 +64,112 @@ main {
   height: auto; /* 高度自适应 */
   margin-bottom:10px;
 }
+
+/* 论文 */
+/* CSS 样式 */
+.publications {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #2d3436;
+  border-bottom: 3px solid #0984e3;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.paper {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.paper:hover {
+  transform: translateY(-3px);
+}
+
+.paper-icon {
+  font-size: 2rem;
+  min-width: 50px;
+  text-align: center;
+}
+
+.paper-content {
+  flex: 1;
+}
+
+.paper-title {
+  color: #2d3436;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.paper-year {
+  color: #636e72;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+.paper-authors {
+  color: #0984e3;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.author-me {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.paper-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.journal {
+  color: #e84393;
+  font-style: italic;
+}
+
+.doi {
+  color: #00b894;
+}
+
+.doi a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.doi a:hover {
+  text-decoration: underline;
+}
+
+.paper-abstract {
+  color: #636e72;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .paper {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .paper-icon {
+    text-align: left;
+  }
+}
