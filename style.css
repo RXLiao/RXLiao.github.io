@@ -117,9 +117,14 @@ h3 {
 /*新闻*/
 .news-item {
   max-width: 600px;
-  margin: 1.5rem auto;
+  margin: 1.5rem 0; /* 移除auto实现左对齐 */
   padding: 1rem;
   border-bottom: 1px solid #eee;
+}
+
+.news-item:hover {
+  background: #f8f9fa;
+  transition: background 0.2s;
 }
 
 .news-date {
