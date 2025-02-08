@@ -1,159 +1,44 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>廖瑞翔的个人主页 | 全栈开发者</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* 基础样式 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        body {
-            background: #f0f2f5;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        /* 容器布局 */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        /* 头部区域 */
-        .header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .avatar {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: 1rem auto;
-            border: 4px solid #2f3542;
-        }
-
-        /* 社交链接 */
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .social-links a {
-            color: #2f3542;
-            font-size: 1.8rem;
-            transition: transform 0.3s;
-        }
-
-        .social-links a:hover {
-            transform: translateY(-3px);
-        }
-
-        /* 内容卡片 */
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        /* 技术栈徽章 */
-        .badges {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin: 1rem 0;
-        }
-
-        .badge {
-            background: #2f3542;
-            color: white;
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-
-        /* GitHub统计 */
-        .github-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        /* 响应式设计 */
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-            
-            .github-stats {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <title>Academic Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- 头部 -->
-        <header class="header">
-            <img src="https://avatars.githubusercontent.com/u/你的ID" alt="头像" class="avatar">
-            <h1>👋 你好，我是 廖瑞翔</h1>
-            <p>全栈开发者 | 开源爱好者</p>
-            
-            <!-- 社交链接 -->
-            <div class="social-links">
-                <a href="https://github.com/你的用户名" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/你的ID" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
-            </div>
-        </header>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 左侧栏 -->
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar">
+                <div class="position-sticky">
+                    <div class="profile text-center">
+                        <img src="profile.jpg" class="rounded-circle" alt="Profile Picture">
+                        <h4>Your Name</h4>
+                        <p>Short biography or title</p>
+                    </div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><i class="fas fa-globe"></i> Earth</li>
+                        <li class="nav-item"><i class="fas fa-university"></i> University Name</li>
+                        <li class="nav-item"><i class="fas fa-envelope"></i> Email</li>
+                        <li class="nav-item"><i class="fab fa-google"></i> Google Scholar</li>
+                        <li class="nav-item"><i class="fab fa-github"></i> GitHub</li>
+                    </ul>
+                </div>
+            </nav>
 
-        <!-- 个人简介 -->
-        <section class="card">
-            <h2>📌 关于我</h2>
-            <p>3年全栈开发经验，擅长使用 React 和 Node.js 构建高性能应用。热爱参与开源项目和技术分享，定期在个人博客撰写技术文章。</p>
-            
-            <div class="badges">
-                <span class="badge">JavaScript</span>
-                <span class="badge">React</span>
-                <span class="badge">Node.js</span>
-                <span class="badge">Python</span>
-                <span class="badge">Docker</span>
-            </div>
-        </section>
-
-        <!-- 项目展示 -->
-        <section class="card">
-            <h2>🚀 精选项目</h2>
-            <div class="project">
-                <h3><a href="项目链接" target="_blank">AI图像识别系统</a></h3>
-                <p>基于 TensorFlow 的图像分类系统，准确率达 95%</p>
-            </div>
-            <div class="project">
-                <h3><a href="项目链接" target="_blank">在线代码编辑器</a></h3>
-                <p>React + Monaco Editor 构建的实时协作编辑器</p>
-            </div>
-        </section>
-
-        <!-- GitHub统计 -->
-        <div class="github-stats">
-            <img src="https://github-readme-stats.vercel.app/api?username=你的用户名&show_icons=true&theme=dark" 
-                 alt="GitHub Stats">
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=你的用户名&layout=compact&theme=dark" 
-                 alt="语言统计">
+            <!-- 右侧主要内容 -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <h1>Academic Pages: A Ready-to-Fork Template</h1>
+                <p>This is an academic website template based on GitHub Pages...</p>
+                <h2>A Data-Driven Website</h2>
+                <p>Like many other Jekyll-based GitHub Pages templates, Academic Pages...</p>
+            </main>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
