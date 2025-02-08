@@ -1,0 +1,33 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    background-color: #f1f3f5;
+    padding: 20px;
+    min-height: 100vh;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+}
+
+.nav-item {
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+.nav-item i {
+    margin-right: 10px;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
