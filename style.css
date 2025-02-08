@@ -1,33 +1,54 @@
+/* 基本样式 */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
 }
 
+/* container-fluid 限制最大宽度，并左右内边距留白 */
+.container-fluid {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* 左侧边栏 */
 .sidebar {
-    background-color: #f1f3f5;
-    padding: 20px;
-    min-height: 100vh;
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f1f3f5;
+  padding: 20px;
+  min-height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
+/* 个人头像及信息 */
 .profile img {
-    width: 80px;
-    height: 80px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.profile h4 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.profile p {
+  font-size: 0.9rem;
+  color: #666;
 }
 
+/* 导航列表 */
 .nav-item {
-    padding: 8px 0;
-    font-size: 16px;
+  padding: 8px 0;
+  font-size: 16px;
 }
-
 .nav-item i {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
+/* 右侧主要内容 */
 main {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
