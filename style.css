@@ -65,3 +65,48 @@ main {
   margin-bottom:10px;
 }
 
+/*论文*/
+.publication {
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  max-width: 680px;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  color: #6e6e6e;
+  font-size: 0.9em;
+  margin-bottom: 0.6rem;
+}
+
+h3 {
+  margin: 0.4rem 0;
+  font-size: 1.1em;
+  color: #24292f;
+}
+
+.authors {
+  color: #4a5568;
+  font-size: 0.95em;
+  margin: 0.6rem 0 1rem;
+}
+
+.links {
+  text-align: right;
+}
+
+.links a {
+  display: inline-block;
+  margin-left: 1.2rem;
+  color: #0969da;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
