@@ -19,23 +19,11 @@ body {
 }
 
 /* 左侧边栏 */
-/*.sidebar {
+.sidebar {
   background-color: #f1f3f5;
   padding: 20px;
   min-height: 100vh;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-}*/
-.row {
-  display: flex;
-  align-items: stretch; /* 保证两栏高度相等 */
-}
-.sidebar {
-  background-color: #f1f3f5;
-  padding: 20px;
-  height: 100%;  /* 让 sidebar 充满父级 */
-  min-height: 100vh; /* 至少等于视口高度 */
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  flex: 0 0 250px; /* 固定宽度，防止塌陷 */
 }
 
 /* 个人头像及信息 */
