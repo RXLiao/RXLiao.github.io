@@ -59,14 +59,14 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.image1 {
+/* .image1 {
   width: 500px; 
-  height: auto; /* 高度自适应 */
+  height: auto; 
   margin-bottom:10px;
-  /*下面是居中代码*/
-  margin: 0 auto; /* 上下0 左右自动 */
-  display: block; /* 关键属性 */
+  margin: 0 auto; 
+  display: block; 
 }
+ */
 
 /*论文*/
 .publication {
@@ -74,7 +74,7 @@ main {
   border-radius: 8px;
   padding: 1.2rem;
   margin: 1rem 0;
-  max-width: 680px;
+  /* max-width: 680px; */
 }
 
 .meta {
